@@ -15,3 +15,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@layer components {
+  .nav__item {
+    @apply px-4 py-4 flex items-start justify-start w-full cursor-pointer hover:bg-[#000000] hover:text-gray-100 text-black font-medium space-x-2 smooth rounded-lg
+  }
+  .nav__icon {
+    @apply h-6 w-6;
+  }
+  .smooth {
+    @apply ease-in-out transition-all duration-300;
+  }
+}
