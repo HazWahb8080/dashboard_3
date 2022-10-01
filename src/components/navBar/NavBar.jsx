@@ -33,7 +33,7 @@ function NavItem({ data }) {
     <Link
       to={`${data.title}`}
       className="w-full"
-      onClick={dispatch(activeNav(data.title))}
+      onClick={() => dispatch(activeNav(data.title))}
     >
       <span
         title={data.title}
@@ -41,7 +41,13 @@ function NavItem({ data }) {
           navLink === data.title && "bg-black text-gray-100"
         } `}
       >
-        <div className=" text-black group-hover:text-gray-100 smooth">
+        <div
+          className={`smooth ${
+            navLink === data.title
+              ? "text-gray-100"
+              : "text-black group-hover:text-gray-100"
+          } `}
+        >
           {data.icon}
         </div>
         <h2 className="hidden lg:flex">{data.title}</h2>
