@@ -6,16 +6,17 @@ const initialState = {
 
 export const ActiveNavBarSlice = createSlice({
   name: "ActiveNavBar",
-  initialState,
+  initialState: {
+    value: "Invoices",
+  },
   reducers: {
-    activeNavLink: (state, action) => {
+    activeNav: (state, action) => {
       state.value = action.payload;
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } =
-  ActiveNavBarSlice.actions;
+export const { activeNav } = ActiveNavBarSlice.actions;
 
 export default ActiveNavBarSlice.reducer;

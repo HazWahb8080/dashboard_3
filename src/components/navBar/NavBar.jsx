@@ -1,7 +1,9 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BoltIcon } from "@heroicons/react/24/outline";
 import { navLinks } from "../../utils/db";
+import { useSelector, useDispatch } from "react-redux";
+import { activeNav } from "../../silces/ActiveNavBarSlice";
 
 function NavBar() {
   return (
@@ -25,9 +27,20 @@ function NavBar() {
 export default NavBar;
 
 function NavItem({ data }) {
+  const navLink = useSelector((state) => state.activeNavLink.value);
+  const dispatch = useDispatch();
   return (
-    <Link to={`${data.title}`} className="w-full">
-      <span title={data.title} className="nav__item group">
+    <Link
+      to={`${data.title}`}
+      className="w-full"
+      onClick={dispatch(activeNav(data.title))}
+    >
+      <span
+        title={data.title}
+        className={`nav__item group ${
+          navLink === data.title && "bg-black text-gray-100"
+        } `}
+      >
         <div className=" text-black group-hover:text-gray-100 smooth">
           {data.icon}
         </div>
