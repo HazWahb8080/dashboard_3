@@ -1,14 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  value: 0,
+  value: "Dashboard",
 };
 
 export const ActiveNavBarSlice = createSlice({
   name: "ActiveNavBar",
-  initialState: {
-    value: "Invoices",
-  },
+  initialState,
   reducers: {
     activeNav: (state, action) => {
       state.value = action.payload;

@@ -16,8 +16,8 @@ root.render(
         {navLinks.map((link) => (
           <Route
             key={link.id}
-            path={`${link.title}/*`}
-            element={link.component}
+            path={link.title === "Dashboard" ? `/*` : `${link.title}/*`}
+            element={link.title === "Dashboard" ? <App /> : link.component}
           />
         ))}
       </Routes>

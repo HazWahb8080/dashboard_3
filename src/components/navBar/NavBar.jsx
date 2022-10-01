@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { BoltIcon } from "@heroicons/react/24/outline";
 import { navLinks } from "../../utils/db";
 import { useSelector, useDispatch } from "react-redux";
@@ -29,9 +29,16 @@ export default NavBar;
 function NavItem({ data }) {
   const navLink = useSelector((state) => state.activeNavLink.value);
   const dispatch = useDispatch();
+  // whenever we are on the default page dashboard tab only can be active
+  const location = useLocation();
+  useEffect(() => {
+    if (location.pathname === "/") {
+      dispatch(activeNav("Dashboard"));
+    }
+  }, []);
   return (
     <Link
-      to={`${data.title}`}
+      to={data.title === "Dashboard" ? "/" : `${data.title}`}
       className="w-full"
       onClick={() => dispatch(activeNav(data.title))}
     >
