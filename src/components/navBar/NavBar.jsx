@@ -35,7 +35,7 @@ function NavItem({ data }) {
     if (location.pathname === "/") {
       dispatch(activeNav("Dashboard"));
     }
-  }, []);
+  });
   return (
     <Link
       to={data.title === "Dashboard" ? "/" : `${data.title}`}
