@@ -1,13 +1,7 @@
-import React from 'react'
-import NavBar from '../navBar/NavBar'
+import React from "react";
 
 function Dashboard() {
-  return (
-    <div className='container__'>
-      <NavBar/>
-      <h1>dashboard</h1>
-    </div>
-  )
+  return <></>;
 }
 
-export default Dashboard
+export default Dashboard;

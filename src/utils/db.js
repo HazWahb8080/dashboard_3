@@ -62,3 +62,24 @@ export const navLinks = [
 
 export const avatar =
   "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80";
+
+export const analyticsBlocks = [
+  {
+    id: 0,
+    title: "Total Earnings",
+    percent: "w-[70%]",
+    value: "12,495",
+  },
+  {
+    id: 1,
+    title: "Total Spending",
+    percent: "w-[40%]",
+    value: "09,495",
+  },
+  {
+    id: 2,
+    title: "Goal This Month",
+    percent: "w-[90%]",
+    value: "24,435",
+  },
+];

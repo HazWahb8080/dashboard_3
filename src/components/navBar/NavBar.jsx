@@ -38,7 +38,7 @@ function NavItem({ data }) {
   });
   return (
     <Link
-      to={data.title === "Dashboard" ? "/" : `${data.title}`}
+      to={data.title === "Dashboard" ? "/" : `/${data.title}`}
       className="w-full"
       onClick={() => dispatch(activeNav(data.title))}
     >

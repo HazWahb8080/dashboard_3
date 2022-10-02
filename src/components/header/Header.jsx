@@ -5,7 +5,10 @@ import { avatar } from "../../utils/db";
 
 function Header() {
   const location = useLocation();
-  let pageTitle = location.pathname === "/" ? "Dashboard" : location.pathname;
+  let pageTitle =
+    location.pathname === "/"
+      ? "Dashboard"
+      : location.pathname.replace("/", "");
   return (
     <header className="header">
       <h1 className="text-xl font-medium">{pageTitle}</h1>
