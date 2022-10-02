@@ -15,7 +15,7 @@ function Dash() {
             ))}
           </div>
           {/* chart */}
-          <div className="bg-[#FAFAFA] py-4 px-4 items-center justify-center flex w-full h-[300px]"></div>
+          <div className=" rounded-xl bg-[#FAFAFA] py-4 px-4 items-center justify-center flex w-full h-[300px]"></div>
         </div>
         {/* invoices */}
         <div className=" hidden w-full border border-red-500 py-4 lg:col-span-2 lg:flex"></div>
