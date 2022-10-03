@@ -31,7 +31,7 @@ function BlockItem({ block }) {
   return (
     <div className="w-full bg-[#FAFAFA] rounded-xl py-6 px-6 mb-4">
       <h1 className="my-2 text-md text-gray-700 mb-4">{title}</h1>
-      <div className="w-full items-start justify-start flex flex-col">
+      <div className="w-full items-start justify-start flex  flex-col">
         <div className="w-[100%] py-[2px] bg-gray-300 rounded-xl" />
         <div
           className={`${percent} bg-green-500 py-[2px] rounded-xl -mt-1  `}
