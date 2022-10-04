@@ -7,7 +7,7 @@ import { activeNav } from "../../silces/ActiveNavBarSlice";
 
 function NavBar() {
   return (
-    <div className="col-span-2 border-r border-gray-400 items-center justify-start flex flex-col min-h-screen w-full  ">
+    <div className="col-span-2 border-r border-gray-400 items-center justify-start flex flex-col min-h-screen h-full w-full  ">
       <span className=" flex lg:items-start lg:justify-start items-center justify-center space-x-2 w-full lg:w-2/3 py-4">
         <BoltIcon className=" h-8 w-8 cursor-pointer lg:cursor-default " />
         <h1 className="font-bold text-2xl hidden lg:flex">PSONO</h1>

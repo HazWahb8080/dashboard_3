@@ -2,14 +2,15 @@ import { Bars3Icon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import React from "react";
 import { analyticsBlocks, invoicesSection } from "../../utils/db";
 import PageContent from "../PageContent";
+import RightPart from "./RightPart";
 
 function Dash() {
   return (
     <PageContent>
       {/* large grid between the right and left sections */}
-      <div className="grid grid-cols-5 place-items-start w-full lg:px-12 px-4">
+      <div className="grid grid-cols-6 place-items-start w-full lg:px-12 px-4 gap-x-4">
         {/* the analyitcs left part */}
-        <div className="lg:col-span-3 col-span-5 w-full items-center justify-center flex flex-col">
+        <div className="lg:col-span-4 col-span-6 w-full items-center justify-center flex flex-col">
           <div className=" grid lg:grid-cols-3 grid-cols-1 w-full place-items-center gap-4">
             {analyticsBlocks.map((block) => (
               <BlockItem block={block} key={block.id} />
@@ -31,17 +32,20 @@ function Dash() {
                 </span>
               </span>
             </div>
-            <div className="w-full grid grid-cols-4 place-items-start py-6 h-[200px] overflow-y-scroll scrollbar-hide">
+            <div className="w-full grid lg:grid-cols-4 grid-cols-2 place-items-start py-6 h-full overflow-y-scroll scrollbar-hide">
               {invoicesSection.map((invoice) => (
                 <div
                   key={invoice.id}
                   className="w-full items-start justify-start flex flex-col"
                 >
-                  <h1 className="border-b border-gray-300 w-full text-lg text-gray-600 mb-4">
+                  <h1 className="lg:border-b border-gray-300 w-full text-gray-600 mb-4">
                     {invoice.title}
                   </h1>
                   {invoice.items.map((item) => (
-                    <h2 className="w-full my-2 py-2 border-b border-gray-200" key={item}>
+                    <h2
+                      className="w-full my-2 py-2 border-b border-gray-200"
+                      key={item}
+                    >
                       {item}
                     </h2>
                   ))}
@@ -51,6 +55,7 @@ function Dash() {
           </div>
         </div>
         {/* Right prt */}
+        <RightPart />
       </div>
     </PageContent>
   );

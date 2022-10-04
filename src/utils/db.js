@@ -110,3 +110,94 @@ export const invoicesSection = [
     items: ["$320,00", "$320,00", "$320,00"],
   },
 ];
+
+export const ActivityItems = [
+  {
+    id: 0,
+    image:
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+    name: "Aiony Haust",
+    time: "2 minutes ago",
+    invoice: "V12-345636",
+  },
+  {
+    id: 1,
+    image:
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    name: "Rahija Jaban",
+    time: "9 minutes ago",
+    invoice: "V12-345636",
+  },
+  {
+    id: 2,
+    image:
+      "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+    name: "Aiony Haust",
+    time: "2 minutes ago",
+    invoice: "V12-345636",
+  },
+  {
+    id: 3,
+    image:
+      "https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=723&q=80",
+    name: "Batin Hure",
+    time: "2 minutes ago",
+    invoice: "V12-3457678",
+  },
+  {
+    id: 4,
+    image:
+      "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    name: "Erama Kunta",
+    time: "7 minutes ago",
+    invoice: "V12-336462",
+  },
+  {
+    id: 2,
+    image:
+      "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+    name: "Aiony Haust",
+    time: "2 minutes ago",
+    invoice: "V12-345636",
+  },
+  {
+    id: 3,
+    image:
+      "https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=723&q=80",
+    name: "Batin Hure",
+    time: "2 minutes ago",
+    invoice: "V12-3457678",
+  },
+  {
+    id: 4,
+    image:
+      "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    name: "Erama Kunta",
+    time: "7 minutes ago",
+    invoice: "V12-336462",
+  },
+  {
+    id: 2,
+    image:
+      "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+    name: "Aiony Haust",
+    time: "2 minutes ago",
+    invoice: "V12-345636",
+  },
+  {
+    id: 3,
+    image:
+      "https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=723&q=80",
+    name: "Batin Hure",
+    time: "2 minutes ago",
+    invoice: "V12-3457678",
+  },
+  {
+    id: 4,
+    image:
+      "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    name: "Erama Kunta",
+    time: "7 minutes ago",
+    invoice: "V12-336462",
+  },
+];

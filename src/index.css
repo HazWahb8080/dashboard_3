@@ -4,7 +4,7 @@
 
 @layer components {
   .container__ {
-    @apply bg-white place-items-center grid grid-cols-12 min-h-screen w-full;
+    @apply bg-white place-items-start grid grid-cols-12 min-h-screen w-full;
   }
   .nav__item {
     @apply px-4 py-4 flex items-start justify-start w-full cursor-pointer hover:bg-[#000000] hover:text-gray-100 text-black font-medium space-x-2 smooth rounded-lg;
@@ -23,5 +23,8 @@
   }
   .icon__wrapper {
     @apply p-2 bg-gray-200 rounded-lg items-center justify-center flex cursor-pointer hover:bg-gray-100;
+  }
+  .img {
+    @apply w-12 h-12 object-center object-cover rounded-full
   }
 }
