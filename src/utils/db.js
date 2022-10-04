@@ -83,3 +83,30 @@ export const analyticsBlocks = [
     value: "24,435",
   },
 ];
+
+export const invoicesSection = [
+  {
+    id: 0,
+    title: "INVOICE NAME",
+    items: ["MailChimp Support", "Cash Withdrawal", "Ronald GmbH"],
+  },
+  {
+    id: 1,
+    title: "INVOICE ID",
+    items: [
+      "Invoices V12-345679",
+      "Invoices V13-345869",
+      "Invoices V14-354786",
+    ],
+  },
+  {
+    id: 2,
+    title: "DATE",
+    items: ["28-02-22", "14-04-22", "05-06-22"],
+  },
+  {
+    id: 3,
+    title: "Amount",
+    items: ["$320,00", "$320,00", "$320,00"],
+  },
+];

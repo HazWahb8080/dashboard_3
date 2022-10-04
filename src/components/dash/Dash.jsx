@@ -1,6 +1,6 @@
 import { Bars3Icon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import React from "react";
-import { analyticsBlocks } from "../../utils/db";
+import { analyticsBlocks, invoicesSection } from "../../utils/db";
 import PageContent from "../PageContent";
 
 function Dash() {
@@ -19,7 +19,7 @@ function Dash() {
           <div className=" rounded-xl bg-[#FAFAFA] py-4 px-4 items-center justify-center flex w-full h-[300px]"></div>
           {/* Invoices section */}
           <div className=" w-full py-4 col-span-2 flex justify-center items-center flex-col">
-            <div className="flex justify-between items-center w-full">
+            <div className="flex justify-between items-center w-full mb-2">
               <h1 className="text-2xl font-medium w-full"> New Invoice </h1>
               {/* icons */}
               <span className="w-full items-center justify-end flex space-x-4">
@@ -31,8 +31,22 @@ function Dash() {
                 </span>
               </span>
             </div>
-            <div className="w-full grid grid-cols-4 place-items-start border border-red-500">
-              <h></h>
+            <div className="w-full grid grid-cols-4 place-items-start py-6 h-[200px] overflow-y-scroll scrollbar-hide">
+              {invoicesSection.map((invoice) => (
+                <div
+                  key={invoice.id}
+                  className="w-full items-start justify-start flex flex-col"
+                >
+                  <h1 className="border-b border-gray-300 w-full text-lg text-gray-600 mb-4">
+                    {invoice.title}
+                  </h1>
+                  {invoice.items.map((item) => (
+                    <h2 className="w-full my-2 py-2 border-b border-gray-200" key={item}>
+                      {item}
+                    </h2>
+                  ))}
+                </div>
+              ))}
             </div>
           </div>
         </div>
