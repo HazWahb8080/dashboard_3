@@ -2,6 +2,7 @@ import { Bars3Icon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import React from "react";
 import { analyticsBlocks, invoicesSection } from "../../utils/db";
 import PageContent from "../PageContent";
+import ChartX from "./Chart";
 import RightPart from "./RightPart";
 
 function Dash() {
@@ -17,7 +18,9 @@ function Dash() {
             ))}
           </div>
           {/* chart section */}
-          <div className=" rounded-xl bg-[#FAFAFA] py-4 px-4 items-center justify-center flex w-full h-[300px]"></div>
+          <div className=" rounded-xl bg-[#FAFAFA] py-4 px-4 items-center justify-center flex w-full h-[300px]">
+            <ChartX/>
+          </div>
           {/* Invoices section */}
           <div className=" w-full py-4 col-span-2 flex justify-center items-center flex-col">
             <div className="flex justify-between items-center w-full mb-2">

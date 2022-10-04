@@ -25,6 +25,9 @@
     @apply p-2 bg-gray-200 rounded-lg items-center justify-center flex cursor-pointer hover:bg-gray-100;
   }
   .img {
-    @apply w-12 h-12 object-center object-cover rounded-full
+    @apply w-12 h-12 object-center object-cover rounded-full;
+  }
+  .btn {
+    @apply text-[#286965] text-sm font-medium bg-white smooth px-4 py-2 rounded-lg hover:text-white hover:bg-[#286965] border border-transparent hover:border-white
   }
 }
