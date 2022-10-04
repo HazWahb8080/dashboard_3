@@ -18,8 +18,8 @@ function Dash() {
             ))}
           </div>
           {/* chart section */}
-          <div className=" rounded-xl bg-[#FAFAFA] py-4 px-4 items-center justify-center flex w-full h-[300px]">
-            <ChartX/>
+          <div className=" rounded-xl bg-[#FAFAFA] py-4 px-4 items-center justify-center flex w-full ">
+            <ChartX />
           </div>
           {/* Invoices section */}
           <div className=" w-full py-4 col-span-2 flex justify-center items-center flex-col">

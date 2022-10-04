@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { BoltIcon } from "@heroicons/react/24/outline";
+import {
+  ArrowLongRightIcon,
+  ArrowRightOnRectangleIcon,
+  BoltIcon,
+} from "@heroicons/react/24/outline";
 import { navLinks } from "../../utils/db";
 import { useSelector, useDispatch } from "react-redux";
 import { activeNav } from "../../silces/ActiveNavBarSlice";
@@ -20,6 +24,19 @@ function NavBar() {
           ))}
         </div>
       </nav>
+      <div className="items-start justify-start flex flex-col py-4 space-y-6 w-full px-12 mt-20">
+        <span className="items-center justify-center flex flex-col bg-[#FAFAFA] rounded-xl py-12 px-4 w-full group cursor-pointer">
+          <h1 className="w-full font-medium"> Upgrade </h1>
+          <h1 className="flex w-full font-medium ">
+            your plan
+            <ArrowLongRightIcon className="nav__icon mx-2 group-hover:translate-x-4 smooth" />
+          </h1>
+        </span>
+        <span className="items-center justify-center flex  w-full cursor-pointer space-x-4 px-4">
+          <ArrowRightOnRectangleIcon className="nav__icon" />
+          <h1 className="w-full font-medium"> Log Out </h1>
+        </span>
+      </div>
     </div>
   );
 }

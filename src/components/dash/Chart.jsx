@@ -5,6 +5,7 @@ function ChartX() {
   const options = {
     chart: {
       id: "apexchart-example",
+      width:'100%'
     },
     xaxis: {
       categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
@@ -29,7 +30,8 @@ function ChartX() {
         options={options}
         series={series}
         type="bar"
-        className="w-[500px] py-4"
+        width={700}
+        height={300}
       />
     </div>
   );
