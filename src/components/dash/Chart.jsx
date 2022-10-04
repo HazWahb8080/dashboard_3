@@ -5,16 +5,15 @@ function ChartX() {
   const options = {
     chart: {
       id: "apexchart-example",
-      width:'100%'
-    },
+       },
     xaxis: {
       categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
     },
-    colors: ["#286965", "#E0D4C4", "#010201"],
+    colors: ['#286965', '#E0D4C4','#010201'],
     grid: {
-      show: true,
-      borderColor: "#E0D4C4",
-      strokeDashArray: 10,
+        show: true,
+        borderColor: '#E0D4C4',
+        strokeDashArray: 10,
     },
   };
   const series = [
@@ -30,8 +29,7 @@ function ChartX() {
         options={options}
         series={series}
         type="bar"
-        width={700}
-        height={300}
+        className="w-[500px] py-4"
       />
     </div>
   );
