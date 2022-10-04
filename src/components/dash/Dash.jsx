@@ -1,3 +1,4 @@
+import { Bars3Icon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import React from "react";
 import { analyticsBlocks } from "../../utils/db";
 import PageContent from "../PageContent";
@@ -14,11 +15,28 @@ function Dash() {
               <BlockItem block={block} key={block.id} />
             ))}
           </div>
-          {/* chart */}
+          {/* chart section */}
           <div className=" rounded-xl bg-[#FAFAFA] py-4 px-4 items-center justify-center flex w-full h-[300px]"></div>
+          {/* Invoices section */}
+          <div className=" w-full py-4 col-span-2 flex justify-center items-center flex-col">
+            <div className="flex justify-between items-center w-full">
+              <h1 className="text-2xl font-medium w-full"> New Invoice </h1>
+              {/* icons */}
+              <span className="w-full items-center justify-end flex space-x-4">
+                <span className="icon__wrapper">
+                  <MagnifyingGlassIcon className="nav__icon" />
+                </span>
+                <span className="icon__wrapper">
+                  <Bars3Icon className="nav__icon" />
+                </span>
+              </span>
+            </div>
+            <div className="w-full grid grid-cols-4 place-items-start border border-red-500">
+              <h></h>
+            </div>
+          </div>
         </div>
-        {/* invoices */}
-        <div className=" hidden w-full border border-red-500 py-4 lg:col-span-2 lg:flex"></div>
+        {/* Right prt */}
       </div>
     </PageContent>
   );
