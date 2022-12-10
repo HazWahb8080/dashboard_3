@@ -7,7 +7,6 @@ function Settings() {
     <div className="container__">
     <NavBar />
     <PageContent>
-      <h1> content</h1>
     </PageContent>
   </div>
   )

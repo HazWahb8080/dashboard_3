@@ -3,6 +3,7 @@ import NavBar from "../navBar/NavBar";
 import PageContent from "../PageContent";
 
 function Estimates() {
+  
   return (
     <div className="container__">
       <NavBar />
