@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import {
+  Link,
+  useLocation,
+} from "react-router-dom";
 import {
   ArrowLongRightIcon,
   ArrowRightOnRectangleIcon,
@@ -37,9 +40,7 @@ function NavBar() {
           className="items-center justify-center flex w-full cursor-pointer lg:space-x-4 lg:px-4 "
         >
           <ArrowRightOnRectangleIcon className="nav__icon" />
-          <h1 className="w-full font-medium hidden lg:inline-flex">
-            Log Out
-          </h1>
+          <h1 className="w-full font-medium hidden lg:inline-flex">Log Out</h1>
         </span>
       </div>
     </div>
@@ -56,6 +57,8 @@ function NavItem({ data }) {
   useEffect(() => {
     if (location.pathname === "/") {
       dispatch(activeNav("Dashboard"));
+    } else {
+      dispatch(activeNav(location.pathname.replace("/", "")));
     }
   });
   return (
@@ -67,12 +70,13 @@ function NavItem({ data }) {
       <span
         title={data.title}
         className={`nav__item group ${
-          navLink === data.title && "bg-black text-gray-100"
+          (navLink === data.title || location.pathname === `/${data.title}`) &&
+          "bg-black text-gray-100"
         } `}
       >
         <div
           className={`smooth ${
-            navLink === data.title
+            navLink === data.title || location.pathname === `/${data.title}`
               ? "text-gray-100"
               : "text-black group-hover:text-gray-100"
           } `}
